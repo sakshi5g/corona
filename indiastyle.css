@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+body{
+    font-size: 20px;
+    overflow-x:hidden;
+ 
+}
+.chngeclr{
+    animation: colorchnge 1s infinite;
+    font-weight: bolder;
+    font-family: 'Flamenco', cursive
+}
+@keyframes colorchnge{
+    0%{color: red}
+    25%{color: blue}
+    50%{color: purple}
+    100%{color: yellow}
+}
+
+footer{
+    color: white;
+    background-color:lightgray;
+    text-align: center;
+    height: 100px;
+    padding: 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}

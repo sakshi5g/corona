@@ -1,0 +1,189 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+body{
+    font-size: 20px;
+    overflow-x:hidden; 
+  
+    
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(121, 62, 62, 0.5)), url('image/covid_back.jpg');
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Flamenco', cursive;
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.logo{
+    height: 200px;
+   float: left;
+   margin-top: 20px;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.main-nav{
+    float:right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100vh;
+}
+.main-nav li a:hover{
+    border-bottom:2px solid #bf55ec;
+
+}
+.main-content-header{
+ width: 1180px;
+ position: absolute;
+ top: 55%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+h1{
+    font-style: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2;
+}
+.btn-full {
+    background-color:transparent;
+    color: white;
+    margin-right: 15px;
+    border: 1px solid #fff;
+}
+.btn-full:hover{
+    background-color:purple;
+}
+.btn-full2{
+    background-color:transparent;
+    color: white;
+    margin-right: 15px;
+    border: 1px solid #fff;
+}
+
+.btn-full2:hover{
+    background-color:purple;
+}
+
+.text-modified-0{
+  text-align: center;
+  font-style: 240%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  margin: 20px 10px;
+  text-transform: uppercase;
+}
+.video{
+    text-align: center;
+    margin-bottom: 50px;
+}
+iframe{
+    width: 600px;
+    height: 350px;
+}
+.chngeclr{
+    animation: colorchnge 1s infinite;
+    font-weight: bolder;
+}
+@keyframes colorchnge{
+    0%{color: red}
+    25%{color: white}
+    50%{color: purple}
+    100%{color: yellow}
+}
+.mobile-icon{
+    display: none;
+}
+
+footer{
+    color: white;
+    background-color:gray;
+    text-align: center;
+    height: 100px;
+    padding: 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+/*responsive*/
+@media only screen and (max-width:1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2px;
+    }
+    
+}
+@media only screen and (max-width:998px){
+    h1{
+        font-size: 200%;
+    }
+    .text-modified-0{  font-size: 200%;}
+}
+@media only screen and (max-width:768px){
+    h1{font-size: 180%;}
+    .text-modified-0{  font-size: 80%;}
+  .main-nav{display: none}
+  .mobile-icon{
+      display: inline-block;
+      color: white;
+      float: right;
+      margin-top: 30px;
+      margin-right: 20px;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+    .main-nav{
+        float: left;
+    }
+    .logo{
+        height: 100px;}
+        iframe{
+            width: 80%;
+            height: 160%
+        }
+  }
+
+  @media only screen and (max-width:480px){
+      .btn-full{
+          margin-bottom: 20px; }
+      h1{font-size: 160%; }
+      .text-modified-0{  font-size: 60%;}
+        iframe{
+            width: 70%;
+            height: 160%
+        }
+  }
