@@ -10,7 +10,7 @@ body{
     
 }
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(121, 62, 62, 0.5)), url('covid_back.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(121, 62, 62, 0.5)), url('image/covid_back.jpg');
     background-size: cover;
     height: 100vh;
     font-family: 'Flamenco', cursive;
