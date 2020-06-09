@@ -11,7 +11,7 @@ body{
 .chngeclr{
     animation: colorchnge 1s infinite;
     font-weight: bolder;
-    font-family: 'Flamenco', cursive
+  
 }
 @keyframes colorchnge{
     0%{color: red}
